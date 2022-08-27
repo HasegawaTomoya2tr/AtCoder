@@ -87,15 +87,15 @@ int main() {
 		}
 		cout << endl;
 		
-		vi nx;
+		vi nex;
 		for(auto p : nodes) {
 			for(auto q : g[p]) {
 				if(dist[q] == -1) {
 					dist[q] = i + 1;
-					nx.push_back(q);
+					nex.push_back(q);
 				}
 			}
 		}
-		nodes = nx;
+		nodes = nex;
 	}
 }
